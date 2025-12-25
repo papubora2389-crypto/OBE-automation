@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+}
+
+.sidebar .nav-link {
+    color: #333;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    margin: 0.25rem 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #e9ecef;
+    color: #0d6efd;
+}
+
+.sidebar .nav-link.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    margin-bottom: 1.5rem;
+    border-radius: 0.75rem;
+    background: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    color: #0d6efd;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding: 1.5rem 2rem;
+    color: #212529;
+    font-size: 1rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #0d6efd;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+
+.form-control-plaintext {
+    font-size: 1.1rem;
+    color: #333333;
+    padding-left: 0.5rem;
+}
+
+.badge,
+.badge.bg-success,
+.badge.bg-warning,
+.badge.bg-info,
+.badge.bg-primary,
+.badge.bg-danger,
+.badge.bg-secondary {
+    font-size: 0.9rem;
+    padding: 0.35em 0.75em;
+    border-radius: 1rem;
+    font-weight: 600;
+    background-color: transparent !important;
+    background: none !important;
+    color: inherit !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.badge-primary {
+    background: linear-gradient(135deg, #0069d9, #004085);
+    color: white;
+}
+
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.modal-content {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.modal-header {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.alert {
+    border: none;
+    border-radius: 0.375rem;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        height: auto;
+    }
+}
